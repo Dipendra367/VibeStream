@@ -7,9 +7,9 @@ const AboutUs: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen w-full relative bg-[#0f1115] text-white font-sans overflow-x-hidden pb-20">
+    <div className="min-h-screen w-full relative bg-[#0f1115] text-white font-sans overflow-x-hidden overflow-y-auto pb-20">
       {/* Background gradients */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+      <div className="absolute top-0 left-0 w-full min-h-full pointer-events-none">
         <div className="absolute top-[-10%] right-[-5%] w-[40%] h-[40%] rounded-full bg-blue-600/10 blur-[120px] mix-blend-screen" />
         <div className="absolute top-[40%] left-[-10%] w-[30%] h-[30%] rounded-full bg-purple-600/10 blur-[120px] mix-blend-screen" />
       </div>
