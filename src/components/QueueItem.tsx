@@ -6,13 +6,12 @@ import type { QueueItem as QueueItemType } from '../store/usePlayerStore';
 
 interface Props {
   item: QueueItemType;
-  index: number;
   isActive: boolean;
   onPlay: () => void;
   onRemove: () => void;
 }
 
-const QueueItem: React.FC<Props> = ({ item, index, isActive, onPlay, onRemove }) => {
+const QueueItem: React.FC<Props> = ({ item, isActive, onPlay, onRemove }) => {
   const {
     attributes,
     listeners,

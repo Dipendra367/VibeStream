@@ -64,7 +64,6 @@ const Queue: React.FC = () => {
                <QueueItem
                  key={item.id}
                  item={item}
-                 index={index}
                  isActive={index === currentIndex}
                  onPlay={() => setCurrentIndex(index)}
                  onRemove={() => removeFromQueue(item.id)}
