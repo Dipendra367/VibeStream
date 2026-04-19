@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #8AB4F8; /* Example modern blue */
+  --color-accent: #c4b5fd;
+  --color-bg-dark: #0f1115;
+  --color-bg-panel: #1a1d24;
+  --color-text-main: #f3f4f6;
+  --color-text-muted: #9ca3af;
+}
+
+body {
+  @apply bg-[#0f1115] text-[#f3f4f6] antialiased m-0 font-sans selection:bg-[#8AB4F8]/30 overflow-hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Base custom classes to reuse */
+@layer components {
+  .glass-panel {
+    @apply bg-black/30 backdrop-blur-xl border border-white/5 shadow-2xl;
+  }
+}
