@@ -10,7 +10,7 @@
 }
 
 body {
-  @apply bg-[#0f1115] text-[#f3f4f6] antialiased m-0 font-sans selection:bg-[#8AB4F8]/30 overflow-hidden;
+  @apply bg-[#0f1115] text-[#f3f4f6] antialiased m-0 font-sans selection:bg-[#8AB4F8]/30;
 }
 
 ::-webkit-scrollbar {
